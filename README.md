@@ -53,7 +53,7 @@ ENTRYPOINT ["/go-init-sentinel", "-watch=/certs/stunnel.pem:SIGHUP", "--"]
 CMD ["/usr/bin/stunnel", "/config/stunnel.conf"]
 ```
 
-The `-watch` flag may be specified multiple tiems to watch multiple files. Each file
+The `-watch` flag may be specified multiple times to watch multiple files. Each file
 change may send a different signal.
 
 ```dockerfile
